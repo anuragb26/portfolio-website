@@ -35,6 +35,22 @@ body,html{
   border: 1px solid #ccc;
   padding: 1rem;
 }
+.project-data {
+  /* width: 80%; */
+  background-color: #dee2e6;
+  overflow:scroll;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 3px #ccc;
+  padding: 10px;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+.project-data h5,.project-data p {
+  word-break:break-all;
+}
+.popover {
+  min-width: 450px;
+}
 @media(min-width:1199px){
   .port-item{
   padding: 3em !important;
@@ -42,6 +58,13 @@ body,html{
 }
 
 @media(max-width:576px){
+  .talentica-btn-large{
+    display: none;
+  }
+  .popover {
+    min-width: 350px;
+    transform: translate3d(5px, 900px, 0px) !important;
+  }
   .work-item {
     display: flex;
     flex-direction: column;
@@ -59,4 +82,3 @@ body,html{
     width:25%;
   }
 }
-

@@ -15,7 +15,7 @@
     <header id="main-header">
       <div class="row no-gutters">
       <div class="col-lg-4 col-md-5">
-        <img src='img/person1.jpg'/>
+        <img src='img/profile-pic.jpg'/>
       </div>
       <div class="col-lg-8 col-md-7">
         <div class="d-flex flex-column">
@@ -23,24 +23,24 @@
             <div class="d-flex flex-row justify-content-between align-items-center">
               <h1 class="display-4">Anurag Bajaj</h1>
                 <div class=''>
-                      <a href='' class='text-white'>
+                      <a href='https://www.linkedin.com/in/anurag-bajaj' target="_blank"  class='text-white'>
                         <i class="fab fa-linkedin"></i>
                       </a>
                     </div>
                 <div class=''>
-                  <a href="" class="text-white">
+                  <a href="https://stackoverflow.com/users/3104312/anuragb26" class="text-white" target="_blank">
                     <i class="fab fa-stack-overflow"></i>
                   </a>
                 </div>
                 <div class=''>
-                  <a href='' class='text-white'>
+                  <a href='https://github.com/anuragb26' class='text-white' target="_blank">
                     <i class="fab fa-github"></i>
                   </a>
                 </div>
             </div>
           </div>
           <div class="p-4 bg-black">
-            Web Developer building high quality web apps.
+           Software developer building high quality web apps
           </div>
           <div>
             <div class="d-flex flex-row text-white align-items-stretch text-center">
@@ -160,7 +160,8 @@
                   Software Developer at Amdocs
                 </div>
                 <div class="p-3">
-                  <btn class="btn btn-outline-success">PROJECT WORK...</btn>
+                  <btn  id= 'amdocs-btn' class="btn btn-outline-success" data-toggle="popover"  data-container="body" data-placement="right" data-html="true">PROJECT WORK...</btn>
+
               </div>
                 <div class="card-footer">
                   <h6 class="text-muted">July 2013 to April 2015</h6>
@@ -174,7 +175,7 @@
                     Software Developer at Talentica Software
                   </div>
                   <div class="p-3">
-                    <btn class="btn btn-outline-success">PROJECT WORK...</btn>
+                    <btn id='talentica-btn' class="btn btn-outline-success" data-toggle="popover" data-container="body" data-placement="right" data-html="true">PROJECT WORK...</btn>
                   </div>
                   <div class="card-footer">
                      <h6 class="text-muted">May 2015 to present</h6>
@@ -306,11 +307,99 @@
         </div>
     </div>
   </div>
+
+  <!-- Amdocs Modal-->
+  <div class='modal' id='amdocs'>
+    <div class='modal-dialog'>
+      <div class='modal-content' style='min-height: 400px;'>
+        <div class='modal-header'>
+          <h5 class='modal-title'>Project Work</h5>
+          <button class='close' data-dismiss='modal'>&times;</button>
+        </div>
+        <div class='modal-body'>
+            <div class='panel panel-default project-data'>
+                <div class='panel-body'>
+                  <h6>Public telecommunications company in Ecuador</h6>
+                  <ul>
+                      <li>Designing and implementing a web portal providing easy and customised access to customer invoices</li>
+                      <li>Acquired client side interaction in an onsite visit to Ecuador as part of  User Acceptance Testing phase where I was the focal point of co-ordination between offshore and onshore development teams.</li>
+                  </ul>
+                  <p class='lead'>Tech Stack: Python,Jquery,PHP,MySql,Unix</p>
+                </div>
+              </div> 
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class='modal' id='talentica'>
+        <div class='modal-dialog'>
+          <div class='modal-content' style='min-height: 400px;'>
+            <div class='modal-header'>
+              <h5 class='modal-title'>Project Work</h5>
+              <button class='close' data-dismiss='modal'>&times;</button>
+            </div>
+            <div class='modal-body'>  
+                <div class="container">
+                    <ul class="nav nav-pills">
+                      <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+                      <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
+                      <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
+                      <li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
+                    </ul>
+                </div>    
+            </div>
+            </div>
+          </div>
+        </div>
+        <div id='popover-content-amdocs-btn' class='panel panel-default project-data d-none'>
+            <div class='panel-body project-data'>
+              <h6>Telecom company in Ecuador</h6>
+              <ul>
+                  <li>Designing and implementing a web portal providing easy and customised access to customer invoices</li>
+                  <li>Acquired client side interaction in an onsite visit to Ecuador as part of  User Acceptance Testing phase where I was the focal point of co-ordination between offshore and onshore development teams.</li>
+              </ul>
+              <p>Tech Stack: Python,Jquery,PHP,MySql,Unix</p>
+            </div>
+        </div>
+        <div id='popover-content-talentica-btn' class='panel panel-default project-data d-none'>
+            <div class='panel-body project-data'>
+              <h6>AI Driven Startup disrupting retail domain</h6>
+              <ul>
+                  <li>Developed a server side rendered React based landing page website for a successful ICO.</li>
+                  <li>Envisioned,developed and  maintained an Onboarding web application  wherein users are asked a set of questions to create their shopper profile which can then be leveraged to provide them better recommendations</li>
+              </ul>
+              <p>Tech Stack: React,Redux,Redux-saga,Bootstrap,Nodejs,JWT,Mongodb.</p>
+            </div>
+            <div class='panel-body project-data'>
+                <h6>Series B Funded Healthcare Domain Company.</h6>
+                <ul>
+                    <li>Developed an admin dashboard which showcases medical datasets providing relevant insights.Acheived 90% Code coverage through unit-tests and integration tests.</li>
+                </ul>
+                <p>Tech Stack: React,Redux,Redux-saga,Enzyme,Jest,Bootstrap,SASS,Nodejs.</p>
+            </div>
+            <div class='panel-body project-data'>
+                <h6>Pay To Video Call company in South Africa.</h6>
+                <ul>
+                    <li>Conceptualised the entire video call session which consists of sending phone call notifications(Twillio IVR ),payment Process(Paypal Integration) and peer to peer video connections.(WebRTC protocol),carefully making the right technical choices after proper deliberation and discussion of available technologies.</li>
+                    <li>Designed and implemented user registration and dashboard  systems.</li>
+                </ul>
+                <p>Tech Stack: React,Redux,BootstrapNodejs,Laravel,JWT,MySql.</p>
+            </div>
+            <div class='panel-body project-data'>
+                <h6>Leading Mobile advertising company.</h6>
+                <ul>
+                    <li>Spearheaded the requirement analysis and implementation of a web based reporting portal .This tool currently analyses and makes sense out of millions of ad requests originating from the ad-serving engine.</li>
+                    <li>Received Spot Award for conceptualizing and implementing a dashboard displaying  and filtering hierarchical data spanning upto 10 levels.</li>
+                </ul>
+                <p>Tech Stack: Django,Reactjs,Mongodb,Jquery,CakePhp,MySql</p>
+            </div>
+        </div>
+  </div>
     <!-- FOOTER -->
     <footer id="main-footer" class="p-5 bg-dark text-white">
       <div class="row">
         <div class="col-md-6">
-          <a href="#" class="btn btn-outline-light">
+          <a target="_blank"  href="assets/Anurag_Bajaj.pdf" class="btn btn-outline-light">
             <i class="fas fa-cloud"></i>Download Resume
           </a>
         </div>
@@ -328,6 +417,24 @@
     $('.port-item').click(function(){
       $('.collapse').collapse('hide')
     })
+    $("[data-toggle=popover]").each(function(i, obj) {
+        $(this).popover({
+          html: true,
+          content: function() {
+            var id = $(this).attr('id')
+            return $('#popover-content-' + id).html();
+          }
+        });
+    });
+    $("html").on("mouseup", function (e) {
+      var l = $(e.target);
+      if (l[0].className.indexOf("popover") == -1) {
+        $(".popover").each(function () {
+            $(this).popover("hide");
+        });
+      }
+  });
+
   </script>
   
 </body>
