@@ -4,12 +4,319 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="img/favicon.ico" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel='stylesheet' href='css/style.css'>
-  <title>Bootstrap Theme</title>
+  <title>Anurag Bajaj</title>
 </head>
-<body>
+<body class='p-5'>
+  <div class="container">
+    <header id="main-header">
+      <div class="row no-gutters">
+      <div class="col-lg-4 col-md-5">
+        <img src='img/person1.jpg'/>
+      </div>
+      <div class="col-lg-8 col-md-7">
+        <div class="d-flex flex-column">
+          <div class="p-5 bg-dark text-white">
+            <div class="d-flex flex-row justify-content-between align-items-center">
+              <h1 class="display-4">Anurag Bajaj</h1>
+                <div class=''>
+                      <a href='' class='text-white'>
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </div>
+                <div class=''>
+                  <a href="" class="text-white">
+                    <i class="fab fa-stack-overflow"></i>
+                  </a>
+                </div>
+                <div class=''>
+                  <a href='' class='text-white'>
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+            </div>
+          </div>
+          <div class="p-4 bg-black">
+            Web Developer building high quality web apps.
+          </div>
+          <div>
+            <div class="d-flex flex-row text-white align-items-stretch text-center">
+                <div class="port-item p-4 bg-primary" data-toggle='collapse' data-target='#home'>
+                  <i class="fas fa-home fa-2x d-block"></i>
+                  <span class="d-none d-sm-block">Home</span>
+                </div>
+                <div class='port-item p-4 bg-success' data-toggle='collapse' data-target='#resume'>
+                  <i class='fas fa-graduation-cap fa-2x d-block'></i>
+                  <span class="d-none d-sm-block">Resume</span>
+                </div>
+                <div class='port-item p-4 bg-warning' data-toggle='collapse' data-target='#work'>
+                  <i class='fas fa-folder-open fa-2x d-block'></i>
+                  <span class="d-none d-sm-block">Work</span>
+                </div>
+                <div class='port-item p-4 bg-danger' data-toggle='collapse' data-target='#contact'>
+                  <i class='fas fa-envelope fa-2x d-block'></i>
+                  <span class="d-none d-sm-block">Contact</span>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </header>
+    <!--HOME-->
+    <div class="collapse show" id="home">
+      <div class='row'>
+        <div class="col-sm-12">
+        <div class="card card-body bg-primary text-white py-5">
+          <h4>Welcome to My Page</h4>
+        </div>
+        </div>
+      </div> 
+      <div class='row'>
+        <div class="col-sm-12 p-3">
+          <div class="card">
+            <div class="card-header">
+              <h3>My Skills</h3>
+            </div>
+            <div class="card-body">
+                <p>Below is the list of all technologies that I have worked with throughout my career</p>
+            </div>
+          </div>            
+        </div>
+      </div>
+        <div class='row'>
+            <div class="col-sm-6 p-3">
+              <div class="card skill-card">
+                  <div class="card-header text-center">
+                    <p class="lead">Proficient</p>
+                  </div>
+                  <div class="card-body">
+                      <ul>
+                        <li>Javascript(ES5 & ES6)</li>
+                        <li>React & Redux</li>
+                        <li>Node.js with Express</li>
+                        <li>Enzyme,Jest and Mocha</li>
+                        <li>Git</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap</li>
+                        <li>Jquery</li>
+                      </ul>
+                  </div> 
+                </div>
+              </div>
+            <div class="col-sm-6 p-3">
+                <div class="card skill-card">
+                    <div class="card-header text-center">
+                      <p class="lead">Moderate</p>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                          <li>MongoDB</li>
+                          <li>Python</li>
+                          <li>Django</li>
+                          <li>MySql</li>
+                          <li>SVN</li>
+                          <li>PHP</li>
+                          <li>Laravel</li>
+                          <li>CakePHP</li>
+                        </ul>
+                    </div> 
+                  </div>
+            </div>
+        </div>     
+      </div>
+    <!--RESUME-->
+    <div id="resume" class='collapse'>
+        <div class='row'>
+            <div class="col-sm-12">
+              <div class="card card-body bg-success text-white py-5">
+                <h4>My Resume</h4>
+              </div>
+            </div>
+        </div> 
+        <div class='row'>
+            <div class="col-sm-12 p-3">
+              <div class="card">
+                <div class="card-header">
+                  <h3>Work Experience</h3>
+                </div>
+                <div class="card-body">
+                    <p>Below is a summary of my 6 year work experience spanning across multiple projects developing and maintaining applications in telecom,advertising,retail and healthcare domain. </p>
+                </div>
+              </div>            
+            </div>
+        </div>
+      <div class='row'>
+        <div class="col-sm-12 p-3">
+          <div class="card-deck">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">
+                  Software Developer at Amdocs
+                </div>
+                <div class="p-3">
+                  <btn class="btn btn-outline-success">PROJECT WORK...</btn>
+              </div>
+                <div class="card-footer">
+                  <h6 class="text-muted">July 2013 to April 2015</h6>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    Software Developer at Talentica Software
+                  </div>
+                  <div class="p-3">
+                    <btn class="btn btn-outline-success">PROJECT WORK...</btn>
+                  </div>
+                  <div class="card-footer">
+                     <h6 class="text-muted">May 2015 to present</h6>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='work' class='collapse'>
+      <div class='row'>
+        <div class="col-sm-12">
+          <div class="card card-body bg-warning text-white py-5">
+            <h4>My Work</h4>
+          </div>
+        </div>
+      </div> 
+      <div class='row'>
+        <div class="col-sm-12 p-3">
+          <div class="card">
+            <div class="card-header">
+              <h3>Side Projects</h3>
+            </div>
+            <div class="card-body">
+                <p>Below is a summary of side projects that I work on during my spare-time following various online courses to sharpen my skill set.</p>
+                <p>Click on the headings or the logo to check them out!</p>
+            </div>
+          </div>            
+        </div>
+      </div>
+      <div class='row'>
+        <div class='col-sm-12 p-3'>
+          <ul class='list-unstyled'>
+            <li class='media mb-3 work-item'>
+                <a class='pr-3 pb-1'   target="_blank"  href='https://burger-backend-95470.firebaseapp.com/'>
+                  <div class='media-img-wrapper'>
+                    <img class='mr-3 align-self-center' src="img/burger-builder.png">
+                  </div>
+                </a>
+                <div class='media-body'>
+                    <a target="_blank"  href='https://burger-backend-95470.firebaseapp.com/'> 
+                      <h5 >Burger Builder</h5>
+                    </a>
+                    <p>
+                      Responsive Single Page application where users can signup/login and create a burger of their choice.
+                    </p>
+                    <h6>Tech Stack:<span class='tech-stack'>React,Redux,Redux-saga,JWT,Firebase</span></h6>
+                    <ol class='list-unstyled d-sm-none'><li>React</li><li>Redux</li><li>Redux-saga</li><li>JWT</li><li>Firebase</li></ol>
+                </div>
+            </li>
+            <li class='media mb-3 work-item'>
+                <a class='pr-3' href='https://blissful-shirley-d102d5.netlify.com/#' target="_blank">
+                  <div class='media-img-wrapper'>
+                    <img class='mr-3 align-self-center' src="img/food-delivery.png">
+                  </div>
+                </a>
+                <div class='media-body'>
+                    <a href='https://blissful-shirley-d102d5.netlify.com/#' target="_blank">
+                      <h5 >Food Delivery Landing Page</h5>
+                    </a>
+                    <p>
+                      Responsive Food Delivery Landing Page website.
+                    </p>
+                      <h6>Tech Stack:<span class='tech-stack'>HTML5,CSS3,Jquery</span> </h6>
+                      <ol class='list-unstyled d-sm-none'><li>HTML5</li><li>CSS3</li><li>Jquery</li></ol>
+                </div>
+            </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT -->
+    <div id='contact' class='collapse'>
+        <div class='row'>
+          <div class="col-sm-12">
+            <div class="card card-body bg-danger text-white py-5">
+              <h4>Contact</h4>
+            </div>
+          </div>
+      </div> 
+    <div class='row'>
+      <div class="col-sm-12 p-3">
+        <div class="card">
+          <div class="card-header">
+            <h3>Get In Touch</h3>
+          </div>
+          <div class="card-body">
+              <p>Send a mail filling in below details to connect!</p>  
+          </div>
+        </div>            
+      </div>
+    </div>
+    <div class='row'>
+        <div class='col-sm-12 p-3'>
+          <form>
+            <div class="form-group">
+                <div class="input-group input-group-lg">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-danger text-white">
+                      <i class="fas fa-user"></i>
+                    </span>
+                  </div>
+                  <input type='text' required class="form-control bg-dark text-white" placeholder='Name'/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group input-group-lg">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-danger text-white">
+                      <i class="fas fa-envelope"></i>
+                    </span>
+                  </div>
+                  <input type='email' required class="form-control bg-dark text-white" placeholder='Email'/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group input-group-lg">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-danger text-white">
+                      <i class="fas fa-pencil-alt"></i>
+                    </span>
+                  </div>
+                  <textarea class="form-control bg-dark text-white" placeholder='Message'></textarea>
+                </div>
+            </div>
+            <input type='submit' value='Submit' class='btn btn-danger btn-block btn-lg'/>
+          </form>
+        </div>
+    </div>
+  </div>
+    <!-- FOOTER -->
+    <footer id="main-footer" class="p-5 bg-dark text-white">
+      <div class="row">
+        <div class="col-md-6">
+          <a href="#" class="btn btn-outline-light">
+            <i class="fas fa-cloud"></i>Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
     <script
     src="http://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -17,7 +324,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <script type='text/javascript'>
-    $("#year").text(new Date().getFullYear())
+    // $("#year").text(new Date().getFullYear())
+    $('.port-item').click(function(){
+      $('.collapse').collapse('hide')
+    })
   </script>
   
 </body>

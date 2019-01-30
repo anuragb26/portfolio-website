@@ -1,0 +1,62 @@
+body,html{
+  min-height: 100vh;
+}
+
+#main-header img{
+  height:100%;
+  width:100%;
+}
+
+#main-header .port-item{
+  width: 30%;
+}
+
+#main-header .port-item:hover{
+  opacity:0.8;
+  cursor:pointer;
+}
+
+.skill-card {
+  min-height: 350px;
+}
+.media-img-wrapper {
+  height: 75px;
+  width:auto
+}
+.media-img-wrapper img {
+  height: 100%;
+  width:auto;
+}
+.bg-black{
+  color:white;
+  background: black;
+}
+.work-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+@media(min-width:1199px){
+  .port-item{
+  padding: 3em !important;
+  }
+}
+
+@media(max-width:576px){
+  .work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:12px;
+  }
+  .work-item h5 {
+    text-align:center;
+  }
+  .work-item .tech-stack {
+    display: none;
+  }
+  #main-header .port-item {
+    padding:0.5rem !important;
+    width:25%;
+  }
+}
+
