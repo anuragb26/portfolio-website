@@ -1,7 +1,9 @@
 body,html{
   min-height: 100vh;
 }
-
+a{
+  text-decoration:none;
+}
 #main-header img{
   height:100%;
   width:100%;
@@ -36,7 +38,6 @@ body,html{
   padding: 1rem;
 }
 .project-data {
-  /* width: 80%; */
   background-color: #dee2e6;
   overflow:scroll;
   border: 1px solid #eee;
@@ -80,5 +81,9 @@ body,html{
   #main-header .port-item {
     padding:0.5rem !important;
     width:25%;
+  }
+  .bio-block,.icon-wrapper {
+    flex-direction: column;
+    margin-bottom:1rem;
   }
 }
